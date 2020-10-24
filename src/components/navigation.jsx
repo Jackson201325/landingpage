@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-
 export class Navigation extends Component {
   render() {
     return (
-      <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+      <nav id="menu" className="navbar navbar-default">
         <div className="container">
           <div className="navbar-header">
             <button
@@ -12,15 +11,13 @@ export class Navigation extends Component {
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
             >
-              {" "}
               <span className="sr-only">Toggle navigation</span>{" "}
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
             </button>
             <a className="navbar-brand page-scroll" href="#page-top">
-              React Landing Page
-            </a>{" "}
+            </a>
           </div>
 
           <div
@@ -35,22 +32,7 @@ export class Navigation extends Component {
               </li>
               <li>
                 <a href="#about" className="page-scroll">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="page-scroll">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#portfolio" className="page-scroll">
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a href="#testimonials" className="page-scroll">
-                  Testimonials
+                  How it Works
                 </a>
               </li>
               <li>
