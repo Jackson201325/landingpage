@@ -1,36 +1,36 @@
-import React, { Component } from "react";
+import React from "react";
+import { Grid } from "@material-ui/core";
+import ClemsonLogo from "../static/images/Clemson.svg"
+import LSULogo from "../static/images/LSU.svg"
+import OhioStaeLogo from "../static/images/Ohio State.svg"
+import RutgersLogo from "../static/images/Rutgers.svg"
 
-export class Services extends Component {
-  render() {
-    return (
-      <div id="programs" className="text-center">
-        <div className="container">
-          <div className="section-title">
-            <h2>Top Programs finding ways to connect</h2>
-          </div>
-          <div className="row">
-            {this.props.data
-              ? this.props.data.map((d, i) => (
-                  <div
-                    key={`${d.name}-${i}`} 
-                    className="col-md-4"
-                    style={{cursor: "pointer"}}
-                  >
-                  <a target="_blank"
-                    href={d.name}>
-                    <i className={d.icon}></i>
-                  </a>
-                    <div className="service-desc">
-                      <h3>{d.text}</h3>
-                    </div>
-                  </div>
-                ))
-              : "loading"}
-          </div>
+const Services = () => {
+  return (
+    <div id="programs" className="text-center">
+      <div className="container">
+        <div className="section-title">
+          <h2>Top Programs are finding ways to connect</h2>
+        </div>
+        <div className="row">
+          <Grid container >
+            <Grid container item md={3} className="logos">
+              <img onClick={() => window.open("https://clemsontigers.com/sports/football", "_blank")} src={ClemsonLogo} alt="Clemson Logo" />
+            </Grid>
+            <Grid container item md={3} className="logos">
+              <img onClick={() => window.open("https://lsusports.net/sports/football", "_blank")} src={LSULogo} alt="LSU Logo" />
+            </Grid>
+            <Grid container item md={3} className="logos">
+              <img onClick={() => window.open("https://ohiostatebuckeyes.com/sports/m-footbl/", "_blank")} src={OhioStaeLogo} alt="OhioState Logo" />
+            </Grid>
+            <Grid container item md={3} className="logos">
+              <img onClick={() => window.open("https://scarletknights.com/sports/football", "_blank")} src={RutgersLogo} alt="Rutgers Logo" />
+            </Grid>
+          </Grid>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Services;

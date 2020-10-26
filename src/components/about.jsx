@@ -1,19 +1,18 @@
 import React from 'react'
-import Slider from 'react-elastic-carousel'
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Slider, { consts } from 'react-elastic-carousel'
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import { CardMedia, Grid } from "@material-ui/core";
+import { Button, CardMedia, Grid } from "@material-ui/core";
 
 const About = () => {
 
   const useStyles = makeStyles(theme => ({
     card: {
+      border: '1px solid black',
       display: 'flex',
       width: '150%',
-      height: '96%',
-      margin: '10px',
+      height: 'auto',
+      margin: '1px',
       padding: '20px',
     },
     details: {
@@ -41,17 +40,16 @@ const About = () => {
       backgroundPosition: 'left'
     }
   }));
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
 
+  const myArrows = ({ type, onClick, isEdge }) => {
+    const pointer = type === consts.PREV ? '←' : '→'
+    return (
+      <Button disableRipple style={{ fontSize: "54px", alignSelf: "flex-end", position: "relative", bottom: "-20%" }} onClick={onClick} disabled={isEdge}>
+        {pointer}
+      </Button>
+    )
+  }
   const classes = useStyles();
-  const theme = useTheme();
-
   return (
     <div id="about">
       <div className="container">
@@ -60,7 +58,7 @@ const About = () => {
         </div>
         <div className="row">
           <div className={classes.slider}>
-            <Slider {...settings}>
+            <Slider renderArrow={myArrows}>
               <Grid container className={classes.slide} spacing={3}>
                 <Grid item container direction="column" xs={7}>
                   <h3 style={{ marginBottom: '-10px' }}>Choose your custom features</h3>
@@ -180,7 +178,7 @@ const About = () => {
                 </Grid>
                 <Grid item container xs={2}></Grid>
                 <Grid item container xs={6} className="layout">
-                  <Card style={{ width: "100%", height: "99%" }} >
+                  <Card style={{ width: "100%", height: "99%", border: '1px solid black' }} >
                     <CardMedia
                       className={classes.media}
                       image={require('../static/images/hompage_screenshot.png')}
@@ -197,7 +195,7 @@ const About = () => {
                 </Grid>
                 <Grid item container xs={2}></Grid>
                 <Grid item container xs={6} className="layout">
-                  <Card style={{ width: "100%", height: "99%" }} >
+                  <Card style={{ width: "100%", height: "99%", border: '1px solid black' }} >
                     <CardMedia
                       className={classes.media}
                       image={require('../static/images/Locations Page Screenshot@3x.png')}
@@ -214,6 +212,3 @@ const About = () => {
   )
 }
 export default About
-
-
-
