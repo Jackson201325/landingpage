@@ -1,112 +1,113 @@
 {
-    "Header": {
-
-        "title": "Official Visit",
-        "paragraph": "We are a team of marketing and technical experts helping collegiate partners build out their digital presence, specifically targeting recruits and their guardians"
-
-    },
-    "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
-        ],
-        "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
-        ]
-    },
-    "Services": [{
-            "icon": "fa fa-wordpress",
-            "name": "https://clemsontigers.com/sports/football",
-            "text": "Clemson Tigers football"
-        },
-        {
-            "icon": "fa fa-wordpress",
-            "name": "https://ohiostatebuckeyes.com/sports/m-footbl/",
-            "text": "Ohio State Buckeyes football"
-
-        },
-        {
-            "icon": "fa fa-wordpress",
-            "name": "https://lsusports.net/sports/football",
-            "text": "LSU Tigers football"
-        }
+  "Header": {
+    "title": "Official Visit",
+    "paragraph": "We are a team of marketing and technical experts helping collegiate partners build out their digital presence, specifically targeting recruits and their guardians"
+  },
+  "About": {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
     ],
-    "Testimonials": [{
-            "img": "img/testimonials/01.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/02.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/03.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/05.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/06.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        }
-    ],
-    "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "Marcus Tewksbury",
-            "job": "Deep technical expertise in building digital products, He has served in numerous leadership roles includin Global Vice Presiden for Product Strategy at Texperian and Chief Technical Officer at On Campus Marketing, the leader in endorsed marketing to college studing and parents. Marvus has build thousands of collegiate website"
-        },
-        {
-            "img": "img/team/02.jpg",
-            "name": "Mike Nowoswiat",
-            "job": "Founder of the most accurate college fooball preview publication since 2012, Pick Six Previews, and voter for numerous awards and All-American team. His branding studies have changed th way recruiting offices have opoerated an athletic departments have branded"
-        }
-    ],
-    "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "colleges@ovlabs.io",
-        "facebook": "fb.com",
-        "twitter": "twitter.com",
-        "youtube": "youtube.com"
-    },
-
-    "Features": [{
-            "icon": "fa fa-instagram",
-            "title": "Awareness",
-            "text": "Social Media, Television"
-        },
-        {
-            "icon": "fa fa-desktop",
-            "title": "Consideration",
-            "text": "Search Google, Scan NFL Rosters, Talk to former Teammates"
-        },
-        {
-            "icon": "fa fa-bus",
-            "title": "Recruit",
-            "text": "Campus Visits, Mail, In-Home Visits, Camps"
-        },
-        {
-            "icon": "fa fa-magic",
-            "title": "Sign",
-            "text": "Player Developement, Nurturing"
-        }
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
     ]
+  },
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "https://clemsontigers.com/sports/football",
+      "text": "Clemson Tigers football"
+    },
+    {
+      "icon": "fa fa-wordpress",
+      "name": "https://ohiostatebuckeyes.com/sports/m-footbl/",
+      "text": "Ohio State Buckeyes football"
+    },
+    {
+      "icon": "fa fa-wordpress",
+      "name": "https://lsusports.net/sports/football",
+      "text": "LSU Tigers football"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Marcus Tewksbury",
+      "job": "Deep technical expertise in building digital products, He has served in numerous leadership roles includin Global Vice Presiden for Product Strategy at Texperian and Chief Technical Officer at On Campus Marketing, the leader in endorsed marketing to college studing and parents. Marvus has build thousands of collegiate website"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Nowoswiat",
+      "job": "Marcus Tewksbury has a deep technical expertise in building digital products. He has served in numerous leadership roles including Global Vice President for Product Strategy at Experian and Chief Technical Officer at On Campus Marketing, the leader in endorsed marketing to college students and parents. Marcus has built thousands of collegiate websites."
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "colleges@ovlabs.io",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+
+  "Features": [
+    {
+      "icon": "fa fa-instagram",
+      "title": "Awareness",
+      "text": "Social Media, Television"
+    },
+    {
+      "icon": "fa fa-desktop",
+      "title": "Consideration",
+      "text": "Search Google, Scan NFL Rosters, Talk to former Teammates"
+    },
+    {
+      "icon": "fa fa-bus",
+      "title": "Recruit",
+      "text": "Campus Visits, Mail, In-Home Visits, Camps"
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Sign",
+      "text": "Player Developement, Nurturing"
+    }
+  ]
 }

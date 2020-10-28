@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Hidden } from "@material-ui/core";
 
 export class Header extends Component {
   render() {
@@ -10,26 +10,37 @@ export class Header extends Component {
             <div className="container">
               <div className="row">
                 <Grid container>
-                  <Grid container item md={5}>
-                    <div className="col-md-8 col-md-offset-2 intro-text">
-                      <h1>
-                        {this.props.data ? this.props.data.title : "Loading"}
-                        <span></span>
+                  <Hidden xsDown>
+                    <Grid container item md={6}>
+                      <div className="col-md-10 col-md-offset-1 intro-text">
+                        <h1 style={{ width: "70%", marginBottom: "36px" }}>
+                          Designing cutting-edge
+    <strong> recruiting experiences </strong>
+    for college <strong> football
+    programs</strong>
+                        </h1>
+                        <p style={{ width: "70%", margin: "initial" }}>
+                          {this.props.data ? this.props.data.paragraph : "Loading"}
+                        </p>
+                      </div>
+                    </Grid>
+                    <Grid container item xs={5} className="picture">
+                    </Grid>
+                  </Hidden>
+                  <Hidden smUp>
+                    <div className="col-md-10 col-md-offset-1 intro-text" style={{ padding: "80px 20px 0px 20px" }}>
+                      <h1 style={{ marginBottom: "36px", fontSize: "40px" }}>
+                        Designing cutting-edge
+  <strong> recruiting experiences </strong>
+  for college <strong> football
+  programs</strong>
                       </h1>
-                      <p>
+                      <p style={{ width: "65%", margin: "initial", position: 'absolute' }}>
                         {this.props.data ? this.props.data.paragraph : "Loading"}
                       </p>
-                      <a
-                        href="#features"
-                        className="btn btn-custom btn-lg page-scroll"
-                      >
-                        Brand It
-                      </a>
                     </div>
-                  </Grid>
-                  <Grid container item md={7} className="picture">
-
-                  </Grid>
+                    <img style={{ marginTop: "140px", width: "100%" }} src={require('../static/images/intro.png')}></img>
+                  </Hidden>
                 </Grid>
               </div>
             </div>

@@ -1,33 +1,38 @@
 import React, { Component } from "react";
+import { Grid, Card } from "@material-ui/core";
 
 export class Team extends Component {
   render() {
     return (
       <div id="team" className="text-center">
         <div className="container">
-          <div className="col-md-8 col-md-offset-2 section-title">
+          <div className="col-md-8 col-md-offset-2 section-title" style={{ marginBottom: "-70px" }}>
             <h2>Who we are</h2>
             <p>
               We are college football, marketing, and technical experts who want to help you tubocharge your
               recruiting and branding efforts
             </p>
           </div>
-          <div id="row">
+          <Grid container item>
             {this.props.data
               ? this.props.data.map((d, i) => (
-                  <div  key={`${d.name}-${i}`} className="col-sm-6 team">
-                    <div className="thumbnail">
-                      {" "}
-                      <img src={d.img} alt="..." className="team-img" />
+                <Grid key={`${d.name}-${i}`} item container md={6} justify="space-evenly" alignItems="center">
+                  <div style={{ width: "70%" }}>
+
+                    <img src={d.img} alt="..." className="team-img" />
+                    <Card style={{ margin: "1px", minHeight: "340px" }} >
+
                       <div className="caption">
-                        <h4>{d.name}</h4>
+                        <h4 style={{ color: "#005587" }}>{d.name}</h4>
                         <p>{d.job}</p>
                       </div>
-                    </div>
+                    </Card>
+
                   </div>
-                ))
+                </Grid>
+              ))
               : "loading"}
-          </div>
+          </Grid>
         </div>
       </div>
     );

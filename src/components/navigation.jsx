@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import OFlogo from "../static/images/dark-blue-logo.png"
 export class Navigation extends Component {
   render() {
     return (
@@ -16,18 +17,17 @@ export class Navigation extends Component {
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
             </button>
-            <a className="navbar-brand page-scroll" href="#page-top">
-            </a>
+            <img className="collapsed navbar-toggle" style={{ width: "55%", border: 'none' }} src={OFlogo} alt="Logo" />
           </div>
-
           <div
             className="collapse navbar-collapse"
             id="bs-example-navbar-collapse-1"
           >
+            <img src={OFlogo} alt="Logo" />
             <ul className="nav navbar-nav navbar-right">
               <li>
                 <a href="#features" className="page-scroll">
-                  Features
+                  Solutions
                 </a>
               </li>
               <li>

@@ -6,9 +6,13 @@ export class features extends Component {
       <div id="features" className="text-center">
         <div className="container">
           <Grid container>
-            <Grid container item xs={4} className="leakage">
-              <div className="col-md-10 col-md-offset-1 section-title" style={{ marginBottom: "0px", marginTop: '33%' }}>
-                <h2 style={{ marginBottom: "50px" }}>Your recruiting funnel is <em style={{ color: "#0F9FD6" }}>leaking</em></h2>
+            <Grid container item xs={12}>
+              <div className="col-md-6 col-md-offset-3 section-title" style={{ marginTop: "5%", marginBottom: '0px' }}>
+                <h2 style={{ color: "white" }}>Your recruiting funnel is <em>leaking</em></h2>
+              </div>
+            </Grid>
+            <Grid container item md={5} className="leakage">
+              <div className="col-md-12 col-md-offset-1 section-title" style={{ marginBottom: "66px", marginTop: '20%', color: "white" }}>
                 <p>
                   Parts of the recruiting funnel are well understood
                   <ul>
@@ -26,14 +30,18 @@ export class features extends Component {
                 </p>
               </div>
             </Grid>
-            <Grid container item xs={8}>
-              <img src={require("../static/images/Funnel13x.png")}></img>
+            <Grid container item md={7}>
+              <img style={{}} src={require("../static/images/Funnel13x.png")}></img>
             </Grid>
           </Grid>
+          <Grid container item xs={12}>
+            <div className="col-md-6 col-md-offset-3 section-title" style={{ marginTop: "5%", marginBottom: '0px' }}>
+              <h2 style={{ color: "white" }}>We will help you <em>plug the leak.</em></h2>
+            </div>
+          </Grid>
           <Grid container>
-            <Grid container item xs={4} className="leakage">
-              <div className="col-md-10 col-md-offset-1 section-title" style={{ marginBottom: "0px", marginTop: '33%' }}>
-                <h2 style={{ marginBottom: "50px" }}>We will help you <em style={{ color: "#0F9FD6" }}>plug the leak.</em></h2>
+            <Grid container item md={5} className="leakage">
+              <div className="col-md-11 col-md-offset-1 section-title" style={{ marginBottom: "66px", marginTop: '30%', color: "white" }}>
                 <p>
                   According to a 2020 HubSpot survey, the majority of people prefer to engage with and learn more about a brand by going to their website.
                 </p>
@@ -42,8 +50,8 @@ export class features extends Component {
                 </p>
               </div>
             </Grid>
-            <Grid container item xs={8}>
-              <img src={require("../static/images/Funnel23x.png")}></img>
+            <Grid container item md={7}>
+              <img style={{}} src={require("../static/images/Funnel23x.png")}></img>
             </Grid>
           </Grid>
         </div>

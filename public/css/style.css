@@ -83,9 +83,9 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   margin-bottom: -20px;
 }
-#menu a.navbar-brand > img {
+#menu img {
   width: 20%;
-  margin-left: 16px;
+  margin: 0px 40px;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Roboto", sans-serif;
@@ -204,32 +204,16 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
-.intro {
-  display: table;
-  width: 100%;
-  padding: 0;
-  background: white;
-  /* background: url(../img/intro-bg.jpg) center center no-repeat; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
 #header .picture {
-  background: url(../img/intro.png) center center no-repeat;
+  background: url(../img/intro.png) no-repeat;
+  width: 90%;
 }
 
-.intro h1 {
+#header .intro h1 {
   font-family: "Raleway", sans-serif;
-  color: black;
-  font-size: 60px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 28px;
   margin-top: 0;
   margin-bottom: 10px;
-}
-.intro h1 span {
-  font-weight: 800;
   color: #005587;
 }
 .intro p {
@@ -241,14 +225,14 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 175px;
-  padding-bottom: 100px;
-  text-align: center;
+  padding-top: 145px;
+  padding-bottom: 130px;
+  text-align: left;
 }
 /* Features Section */
 #features {
   padding: 0 0 100px 0;
-  background: #d0d0d0;
+  background: #005587;
 }
 #features i.fa {
   font-size: 38px;
@@ -267,17 +251,20 @@ header .intro-text {
 }
 #features img {
   width: 100%;
-  /* padding-left: 24px; */
-  /* object-fit: cover; */
+  /* height: 90%; */
 }
 
 #features .section-title li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #005587;
+  color: white;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
+}
+
+#features .section-title h2::after {
+  background: linear-gradient(to right, white 0%, white 100%);
 }
 /* About Section */
 #about {
@@ -286,20 +273,12 @@ header .intro-text {
 #about .rec.rec-arrow:disabled {
   visibility: hidden;
 }
-#about .rec.rec-arrow {
-  border-radius: 50%;
-  background-color: #0f9fd6;
-  color: white;
-}
-
-#about .rec .rec-item-wrapper {
-  height: 100%;
-}
 
 #about .rec.rec-dot {
   visibility: hidden;
-  background-color: #0f9fd6;
-  box-shadow: 0 0 1px 3px white;
+}
+#about .rec.rec-item-wrapper {
+  height: 100%;
 }
 
 #about h3 {
@@ -342,16 +321,8 @@ header .intro-text {
 }
 
 #about .coach-info p {
-  position: relative;
-  font-family: Marbach;
   font-size: 14px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
 }
 #about .about-text li {
   margin-bottom: 6px;
@@ -368,14 +339,6 @@ header .intro-text {
   padding-right: 8px;
 }
 #about img {
-  border-radius: 50%;
-  float: left;
-  position: relative;
-  width: 100%;
-  margin: 1.66%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #about .commenter img {
   border-radius: 50%;
@@ -416,7 +379,6 @@ header .intro-text {
 }
 #about .comment p {
   margin: 8px 0px 8px 0px;
-  /* font-family: Marbach; */
   font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
@@ -427,7 +389,7 @@ header .intro-text {
 }
 #about .comment .quote {
   margin: 8px 0px 8px 0px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -447,9 +409,9 @@ header .intro-text {
 }
 
 #about .layout {
-  position: relative;
+  /* position: relative;
   left: calc(2%);
-  margin-top: 1px;
+  margin-top: 1px; */
 }
 /* Services Section */
 #programs {
@@ -600,15 +562,17 @@ header .intro-text {
   margin: 5px 0;
 }
 #team .team-img {
-  width: 240px;
+  position: relative;
+  top: 85px;
+  border-radius: 50%;
+  width: 170px;
 }
-#team .thumbnail {
-  background: transparent;
-  border: 0;
-}
-#team .thumbnail .caption {
-  padding: 10px 0 0 0;
+#team .caption {
+  margin-top: 85px;
+  padding: 20px 40px;
   color: #888;
+  font-size: 18px;
+  line-height: 1.47;
 }
 /* Contact Section */
 #contact {
