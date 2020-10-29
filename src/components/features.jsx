@@ -26,7 +26,7 @@ export class features extends Component {
                   But how do you warm them up before you make contact?
                 </p>
                 <p>
-                  How do you keep them and their parents engaged between the texts and campus visits
+                  How do you keep them and their parents engaged between the texts and campus visits?
                 </p>
               </div>
             </Grid>

@@ -15,16 +15,16 @@ const Services = () => {
         <div className="row">
           <Grid container >
             <Grid container item md={3} className="logos">
-              <img onClick={() => window.open("https://clemsontigers.com/sports/football", "_blank")} src={ClemsonLogo} alt="Clemson Logo" />
+              <img style={{ cursor: "pointer" }} onClick={() => window.open("https://clemsontigers.com/sports/football", "_blank")} src={ClemsonLogo} alt="Clemson Logo" />
             </Grid>
             <Grid container item md={3} className="logos">
-              <img onClick={() => window.open("https://lsusports.net/sports/football", "_blank")} src={LSULogo} alt="LSU Logo" />
+              <img style={{ cursor: "pointer" }} onClick={() => window.open("https://lsusports.net/sports/football", "_blank")} src={LSULogo} alt="LSU Logo" />
             </Grid>
             <Grid container item md={3} className="logos">
-              <img onClick={() => window.open("https://ohiostatebuckeyes.com/sports/m-footbl/", "_blank")} src={OhioStaeLogo} alt="OhioState Logo" />
+              <img style={{ cursor: "pointer" }} onClick={() => window.open("https://ohiostatebuckeyes.com/sports/m-footbl/", "_blank")} src={OhioStaeLogo} alt="OhioState Logo" />
             </Grid>
             <Grid container item md={3} className="logos">
-              <img onClick={() => window.open("https://scarletknights.com/sports/football", "_blank")} src={RutgersLogo} alt="Rutgers Logo" />
+              <img style={{ cursor: "pointer" }} onClick={() => window.open("https://scarletknights.com/sports/football", "_blank")} src={RutgersLogo} alt="Rutgers Logo" />
             </Grid>
           </Grid>
         </div>

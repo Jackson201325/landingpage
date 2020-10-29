@@ -91,7 +91,7 @@ const About = () => {
                 </Grid>
                 <Grid container className={classes.slide}>
                   <Grid item container direction="column" xs={4}>
-                    <h3 style={{ marginBottom: '-10px' }}>Select Your Layout</h3>
+                    <h3 style={{ marginBottom: '-10px' }}>Select your Layout</h3>
                     <p>We have assembled a portfolio of best-in-class templates that make it fast an easy for you to have professional presentation.</p>
                   </Grid>
                   <Grid item container xs={8}>
@@ -102,7 +102,7 @@ const About = () => {
                   <Grid item container direction="column" xs={4}>
                     <h3 style={{ marginBottom: '-10px' }}>Share your content</h3>
                     <p style={{ marginBottom: '-10px' }}>Images, videos, program branding...</p>
-                    <p style={{ marginBottom: '-10px' }}>You already have great content team. We will partner with them to make sure it is being presented to your prized recruits in an effective and intuitive manner.</p>
+                    <p style={{ marginBottom: '-10px' }}>You already have a great content team. We will partner with them to make sure it is being presented to your prized recruits in an effective and intuitive manner.</p>
                   </Grid>
                   <Grid item container xs={8} className="layout">
                     <img style={{ width: "100%" }} src={require('../static/images/howitworks_four.png')}></img>
