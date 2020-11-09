@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Hidden } from "@material-ui/core";
+import { HEADER } from '../data/constant'
+import intro from '../static/images/intro.svg'
 
 export class Header extends Component {
   render() {
@@ -13,34 +15,30 @@ export class Header extends Component {
                   <Hidden xsDown>
                     <Grid container item md={6}>
                       <div className="col-md-10 col-md-offset-1 intro-text">
-                        <h1 style={{ width: "70%", marginBottom: "36px" }}>
-                          Designing cutting-edge
-    <strong> recruiting experiences </strong>
-    for college <strong> football
-    programs</strong>
+                        <h1 className="title">
+                          {HEADER.title}
                         </h1>
-                        <p style={{ width: "70%", margin: "initial" }}>
-                          {this.props.data ? this.props.data.paragraph : "Loading"}
+                        <p className="content">
+                          {this.props.data ? HEADER.content : "Loading"}
                         </p>
                       </div>
                     </Grid>
-                    <Grid container item xs={5} className="picture">
+                    <Grid container item xs={6}>
+                      <img src={intro} className="desktop-img" alt='intro' />
                     </Grid>
                   </Hidden>
                   <Hidden smUp>
-                    <div className="col-md-10 col-md-offset-1 intro-text" style={{ padding: "80px 20px 0px 20px" }}>
-                      <h1 style={{ marginBottom: "36px", fontSize: "40px" }}>
-                        Designing cutting-edge
-  <strong> recruiting experiences </strong>
-  for college <strong> football
-  programs</strong>
+                    <div className="col-md-10 col-md-offset-1 intro-text mobile">
+                      <h1 className="mobile-title">
+                        {HEADER.title}
+
                       </h1>
-                      <p style={{ width: "65%", margin: "initial", position: 'absolute' }}>
+                      <p className="mobile-content">
                         {this.props.data ? this.props.data.paragraph : "Loading"}
                       </p>
                     </div>
-                    <div style={{ height: 'auto' }}>
-                      <img style={{ marginTop: "140px", width: "100%" }} alt='intro' src={require('../static/images/intro.png')}></img>
+                    <div className='mobile-image-container'>
+                      <img className="mobile-img" src={intro} alt='intro' />
                     </div>
                   </Hidden>
                 </Grid>

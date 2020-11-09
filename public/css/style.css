@@ -116,6 +116,9 @@ hr {
   width: 55%;
   border: none;
 }
+.mobile-image-container {
+  height: auto;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -209,31 +212,61 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
-#header .picture {
-  background: url(../img/intro.png) no-repeat;
-  width: 90%;
+#header .intro .desktop-img {
+  margin-top: 10em;
+}
+
+#header .intro-text {
+  padding-top: 110px;
+  padding-bottom: 130px;
+  text-align: left;
+}
+
+#header .intro-text .title {
+  margin-bottom: 36px;
+}
+
+#header .intro-text .content {
+  width: 70%;
+  margin: initial;
+}
+
+#header .mobile-image-container .mobile-img {
+  padding: 20px;
+  width: 100%;
+}
+
+#header .mobile .mobile-title {
+  margin-bottom: 36px;
+  font-size: 40px;
+}
+
+#header .mobile .mobile-content {
+  width: 95%;
+  margin: initial;
+}
+
+#header .mobile {
+  padding: 80px 20px 0px 20px;
 }
 
 #header .intro h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 10px;
   color: #005587;
 }
-.intro p {
+
+#header .intro p {
   color: black;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
   margin-bottom: 60px;
 }
-header .intro-text {
-  padding-top: 145px;
-  padding-bottom: 130px;
-  text-align: left;
-}
+
 /* Features Section */
 #features {
   padding: 0 0 100px 0;

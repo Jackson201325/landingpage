@@ -43,3 +43,10 @@ export const FEATURE_TWO = {
   content1: 'According to a 2020 HubSpot survey, the majority of people prefer to engage with and learn more about a brand by going to their website.',
   content2: 'With the right content and freshness, a recruiting website can play a critical role while nurturing your prized recruits and their guardians through their decision-making process.'
 }
+
+// HEADER
+
+export const HEADER = {
+  title: 'Recruiting Experiences, Re-imagined',
+  content: 'A team of college football and technology experts, we create digital recruiting experiences that are human-centered and future proof.',
+}
