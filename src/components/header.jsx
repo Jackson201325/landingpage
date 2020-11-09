@@ -39,7 +39,9 @@ export class Header extends Component {
                         {this.props.data ? this.props.data.paragraph : "Loading"}
                       </p>
                     </div>
-                    <img style={{ marginTop: "140px", width: "100%" }} src={require('../static/images/intro.png')}></img>
+                    <div style={{ height: 'auto' }}>
+                      <img style={{ marginTop: "140px", width: "100%" }} alt='intro' src={require('../static/images/intro.png')}></img>
+                    </div>
                   </Hidden>
                 </Grid>
               </div>

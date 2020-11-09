@@ -17,17 +17,14 @@ export class Team extends Component {
             {this.props.data
               ? this.props.data.map((d, i) => (
                 <Grid key={`${d.name}-${i}`} item container md={6} justify="space-evenly" alignItems="center">
-                  <div style={{ width: "70%" }}>
-
+                  <div className="card">
                     <img src={d.img} alt="..." className="team-img" />
                     <Card style={{ margin: "1px", minHeight: "340px" }} >
-
                       <div className="caption">
                         <h4 style={{ color: "#005587" }}>{d.name}</h4>
                         <p>{d.job}</p>
                       </div>
                     </Card>
-
                   </div>
                 </Grid>
               ))

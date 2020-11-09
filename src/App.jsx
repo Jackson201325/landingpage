@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navigation from './components/navigation';
 import Header from './components/header';
 import Features from './components/features';
@@ -7,12 +7,19 @@ import Services from './components/services';
 import Team from './components/Team';
 import Contact from './components/contact';
 import JsonData from './data/data.json';
+import { Mixpanel } from './mixpanel';
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState(JsonData);
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const utm_email = urlParams.get('email');
 
-  
-
+  useEffect(() => {
+    if (utm_email && utm_email !== null) {
+      Mixpanel.alias(utm_email);
+    };
+  }, [utm_email])
   return (
     <div>
       <Navigation />

@@ -1,55 +1,88 @@
-import React from "react";
-import OFlogo from "../static/images/dark-blue-logo.png"
-import { MixpanelConsumer } from 'react-mixpanel';
+import React, { useEffect, useState } from "react";
+import OV_Blue from "../static/images/OV_Blue.svg"
 import { SOLUTIONS, HOWITWORKS, TEAM, CONTACT, TOGNAV } from '../data/constant'
+import { Mixpanel } from '../mixpanel';
+
 
 const Navigation = () => {
+  const [shortURL, setShortUrl] = useState(window.location.hash)
+
+  Mixpanel.track_links(".nav a", `${shortURL} clicked`, {
+    link_name: shortURL
+  })
+
+  // const trackLink = (linkName) => {
+  //   ;
+  // }
+
+  useEffect(() => {
+
+  }, [shortURL])
+
+
   return (
-    <MixpanelConsumer>
-      {
-        mixpanel => (
-          <nav id="menu" className="navbar navbar-default">
-            <div className="container">
-              <div className="navbar-header">
-                <button
-                  type="button"
-                  className="navbar-toggle collapsed"
-                  data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1"
-                >
-                  <span className="sr-only">{TOGNAV}</span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                </button>
-                <img className="collapsed navbar-toggle mobile-header" src={OFlogo} alt="Logo" />
-              </div>
-              <div
-                className="collapse navbar-collapse"
-                id="bs-example-navbar-collapse-1"
-              >
-                <img src={OFlogo} className="collapsed logo" alt="Logo" />
-                <ul className="nav navbar-nav navbar-right">
-                  {
-                    [SOLUTIONS, HOWITWORKS, TEAM, CONTACT].map(link => {
-                      return (
-                        <li>
-                          <a onClick={() => {
-                            mixpanel.track("Click", { link });
-                          }} href="#features" className="page-scroll">
-                            {link}
-                          </a>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </div>
-            </div>
-          </nav>
-        )
-      }
-    </MixpanelConsumer>
+    <nav id="menu" className="navbar navbar-default">
+      <div className="container">
+        <div className="navbar-header">
+          <button
+            type="button"
+            className="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span className="sr-only">{TOGNAV}</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+          <img className="collapsed navbar-toggle mobile-header" src={OV_Blue} alt="Logo" />
+        </div>
+        <div
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <img src={OV_Blue} className="collapsed logo" alt="Logo" />
+          <ul className="nav navbar-nav navbar-right">
+            <li>
+              <a
+                onClick={() => setShortUrl(window.location.hash.substring(1))}
+                href={`#${SOLUTIONS.href}`}
+                className="page-scroll">
+                {SOLUTIONS.name}
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => setShortUrl(window.location.hash.substring(1))}
+                // onClick={() => trackLink(HOWITWORKS.name)}
+                href={`#${HOWITWORKS.href}`}
+                className="page-scroll">
+                {HOWITWORKS.name}
+              </a>
+            </li>
+            <li>
+              <a
+                // onClick={() => trackLink(TEAM.name)}
+                onClick={() => setShortUrl(window.location.hash.substring(1))}
+
+                href={`#${TEAM.href}`}
+                className="page-scroll">
+                {TEAM.name}
+              </a>
+            </li>
+            <li>
+              <a
+                // onClick={() => trackLink(CONTACT.name)}
+                onClick={() => setShortUrl(window.location.hash.substring(1))}
+                href={`#${CONTACT.href}`}
+                className="page-scroll">
+                {CONTACT.name}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   )
 }
 

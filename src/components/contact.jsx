@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import { Mixpanel } from '../mixpanel';
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  var mixpanel = require('mixpanel-browser');
+  const { register, handleSubmit, errors } = useForm();
+  Mixpanel.track_forms('#contact-form', 'Email Sent');
 
-  mixpanel.init("94f3f165dfcca6795388f8820835b318");
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+  const onSubmit = data => {
+    console.log("Hello")
+    Mixpanel.people.set({
+      "$email": data.email,
+    });
 
-  const sendMessage = () => {
-    console.log({
-      email: email,
-      message: message
-    })
-    return {
-      email: email,
-      message: message
-    }
+    Mixpanel.register({
+      "message": data.message
+    });
   }
+
   return (
     <div>
       <div id="contact">
@@ -30,19 +30,25 @@ const Contact = () => {
                   will get back to you as soon as possible.
               </p>
               </div>
-              <form name="sentMessage" id="contactForm" noValidate>
+              <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
-                        type="email"
                         id="email"
-                        placeholder="colleges@ovlabs.io"
+                        name="email"
+                        placeholder="Email"
                         className="form-control"
-                        required="required"
-                        onChange={(e) => setEmail(e.target.value)}
+                        ref={register({
+                          required: "required",
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "invalid email address"
+                          }
+                        })}
                       />
-                      <p className="help-block text-danger"></p>
+                      {errors.email?.type === "required" && <span className="help-block text-danger" role="alert">Your input is required</span>}
+                      {errors.email?.type === "pattern" && <span className="help-block text-danger" role="alert">{errors.email.message}</span>}
                     </div>
                   </div>
                 </div>
@@ -53,15 +59,13 @@ const Contact = () => {
                     className="form-control"
                     rows="4"
                     placeholder="Message"
-                    required
-                    onChange={(e) => setMessage(e.target.value)}
+                    ref={register({
+                      required: "required",
+                    })}
                   ></textarea>
-                  <p className="help-block text-danger"></p>
+                  {errors.email?.type === "required" && <span className="help-block text-danger" role="alert"></span>}
                 </div>
-                <div id="success"></div>
-                <button type="submit" onClick={() => sendMessage()} className="btn btn-custom btn-lg">
-                  Send Message
-              </button>
+                <input type="submit" className="btn btn-custom btn-lg" value="Send Message" />
               </form>
             </div>
           </div>
