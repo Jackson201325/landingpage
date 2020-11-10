@@ -9,7 +9,7 @@ const features = () => {
   return (
     <div id="features" className="text-center">
       <div className="container">
-        <Grid container style={{ marginBottom: '10%' }}>
+        <Grid container style={{ marginBottom: '3em' }}>
           <Grid container item className="title-wrapper" xs={12}>
             <div className="col-md-6 col-lg-4 section-title title">
               <h2>{FEATURE_ONE.title1}<em>leaking</em></h2>
@@ -29,19 +29,19 @@ const features = () => {
               </div>
             </Fade>
           </Grid>
-          <Grid container item md={6} lg={6} justify="space-evenly">
+          <Grid container item md={6} lg={6} >
             <div className="mobile-image-container">
               <img src={funnel1} alt="funnel1" className="img-one"></img>
             </div>
           </Grid>
         </Grid>
-        <Grid container style={{ marginBottom: '15%' }}>
+        <Grid container style={{ marginBottom: '3em' }}>
           <Grid container item className="title-wrapper" xs={12}>
             <div className="col-md-6 section-title title line">
               <h2>{FEATURE_TWO.title} <br /><em>plug the leak.</em></h2>
             </div>
           </Grid>
-          <Grid container item md={5} className="leakage section-title content-wrapper">
+          <Grid container item md={5} lg={6} className="leakage section-title content-wrapper">
             <Fade top cascade>
               <div className="content">
                 <Typography variant="body2" component="p">
@@ -54,7 +54,7 @@ const features = () => {
               </div>
             </Fade>
           </Grid>
-          <Grid container item md={6} justify="space-evenly">
+          <Grid container item md={6} lg={6} >
             <div className="mobile-image-container">
               <img src={funnel2} alt="funnel1" className="img-two"></img>
             </div>

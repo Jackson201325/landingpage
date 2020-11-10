@@ -57,8 +57,9 @@ const About = () => {
                   <p>{ABOUT.slide4.content1}</p>
                   <p>{ABOUT.slide4.content2}</p>
                 </Grid>
-                <Grid item container xs={8} className="layout" justify="flex-end">
-                  <div className="mobile-image-container">
+                <Grid item container xs={2} />
+                <Grid item container xs={6} className="layout" justify="space-evenly">
+                  <div className="mobile-image-container" style={{ width: '100%' }} >
                     <img src={require('../static/images/howitworks_one.svg')} alt="one"></img>
                   </div>
                 </Grid>

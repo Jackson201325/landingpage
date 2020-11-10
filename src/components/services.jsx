@@ -38,7 +38,7 @@ const Porgrams = () => {
             <Grid container item xs={3} className="logos">
               <Grid container item justify="center" alignItems="center" className="big-logo">
                 <img onClick={() => window.open("https://scarletknights.com/sports/football", "_blank")} src={RutgersLogo} alt="Rutgers Logo" />
-                <p>daboswinney.com</p>
+                <p>rutgers.football</p>
               </Grid>
             </Grid>
           </Grid>
