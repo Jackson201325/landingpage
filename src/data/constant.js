@@ -27,6 +27,11 @@ export const ABOUT = {
     title: "Share your content",
     content1: "Images, videos, program branding...",
     content2: "You already have a great content team. We will partner with them to make sure it is being presented to your prized recruits in an effective and intuitive manner."
+  },
+  slide4: {
+    title: "Claim a domain, sign prospects",
+    content1: "Congratulations—you are all set!",
+    content2: "Say hello to your newest recruiter. He does not sleep and is always engaging with recruits when they want learn more."
   }
 }
 

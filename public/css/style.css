@@ -343,7 +343,7 @@ a:focus,
   font-weight: bold;
 }
 #about .rec.rec-arrow:disabled {
-  visibility: hidden;
+  opacity: 0.2;
 }
 
 #about .rec.rec-dot {
@@ -353,9 +353,16 @@ a:focus,
   height: auto;
 }
 
+#about .rec .rec-arrow {
+  box-shadow: none;
+  background-color: #005587;
+  color: white;
+  font-size: 2.7em;
+}
+
 #about h3 {
   font-size: 22px;
-  margin: 20px 0 10px 0;
+  margin: 0px 0 10px 0;
 }
 #about h2 {
   position: relative;
@@ -430,59 +437,7 @@ a:focus,
   line-height: 24px;
   margin-bottom: 10px;
 }
-#about .commenter {
-  padding: 10px;
-}
-#about .comment {
-  padding: 10px;
-}
-#about .commenter span {
-  /* text-align: center; */
-  margin: 0px;
-  font-size: 6px;
-  font-weight: 600;
-  font-stretch: condensed;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-  white-space: nowrap;
-}
-#about .comment i {
-  color: #005587;
-  font-size: 10px;
-}
-#about .comment p {
-  margin: 8px 0px 8px 0px;
-  font-size: 12px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-}
-#about .comment .quote {
-  margin: 8px 0px 8px 0px;
-  font-size: 10px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-}
 
-#about .comment-name span:after {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  color: #005587;
-  font-size: 8px;
-  font-weight: 300;
-  padding-right: 8px;
-  padding-left: 8px;
-}
 #about img {
   width: 100%;
 }
@@ -793,12 +748,28 @@ label {
 }
 
 @media (max-width: 768px) {
+  #about {
+    padding: 50px 0px 0px 0px;
+  }
+
   #about img {
     margin: 50px 0;
   }
 
   #about .arrows {
     font-size: 50px;
+  }
+
+  #about .rec .rec-arrow {
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    font-size: 1.7em;
+    line-height: normal;
+  }
+
+  #about .rec .caroucel {
+    height: 100%;
   }
 
   #features {
