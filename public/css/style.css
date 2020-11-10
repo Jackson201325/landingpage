@@ -111,7 +111,7 @@ hr {
 }
 
 #menu.navbar-default .mobile-header {
-  width: 55%;
+  width: 70%;
   border: none;
 }
 .mobile-image-container {
@@ -211,11 +211,11 @@ a:focus,
 }
 /* Header Section */
 #header .intro .desktop-img {
-  margin-top: 10em;
+  margin-top: 8em;
 }
 
 #header .intro-text {
-  padding-top: 110px;
+  padding-top: 90px;
   padding-bottom: 130px;
   text-align: left;
 }
@@ -442,51 +442,57 @@ a:focus,
   width: 100%;
 }
 
+/* Programs */
+
 #programs {
   padding: 100px 0;
-  background: linear-gradient(to right, #005587 0%, #005587 100%);
-  color: #fff;
+  background-image: none !important;
+  background-color: #f7f7f7 !important;
 }
-#programs .service-desc {
-  margin: 10px 10px 20px;
+
+#programs .logos .big-logo img {
+  width: 65%;
 }
+
+#programs .logos .small-logo img {
+  width: 100%;
+}
+
+#programs .logos p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: 800;
+}
+
 #programs h2 {
-  color: #fff;
+  color: black !important;
+  font-size: 30px;
 }
+
 #programs .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #005587 !important;
   height: 4px;
   width: 60px;
   bottom: 0;
   margin-left: -30px;
   left: 50%;
 }
-#programs i.fa {
-  font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #0f9fd6 0%, #0f9fd6 100%);
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}
+
 #programs h3 {
   font-weight: 500;
   padding: 5px 0;
   color: #fff;
 }
+
 #programs p {
   color: rgba(255, 255, 255, 0.75);
 }
-#programs .service-desc {
-  margin-bottom: 40px;
-}
 
 #programs img {
-  width: 75%;
   margin: 0 auto;
 }
 
@@ -506,22 +512,7 @@ a:focus,
   position: relative;
   margin: 0;
 }
-.hover-bg .hover-text {
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
-  );
-  padding: 30% 0 0 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.5s;
-}
+
 .hover-bg .hover-text > h4 {
   opacity: 0;
   color: #fff;
@@ -817,14 +808,34 @@ label {
   #menu .logo {
     visibility: hidden;
   }
+
+  #programs .logos p {
+    visibility: hidden;
+  }
+
   #programs .logos {
     padding: 0px;
+  }
+
+  #programs .logos .big-logo img {
+    width: 50%;
+  }
+
+  #programs .logos .small-logo img {
+    width: 80%;
   }
 
   #team .caption {
     padding: 8px 20px;
   }
+
   #team .card {
     width: 100%;
+  }
+
+  #menu img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 70%;
   }
 }

@@ -20,21 +20,25 @@ const Porgrams = () => {
             <Grid container item xs={3} className="logos">
               <Grid container item justify="center" alignItems="center" className="big-logo">
                 <img onClick={() => window.open("https://clemsontigers.com/sports/football", "_blank")} src={ClemsonLogo} alt="Clemson Logo" />
+                <p>daboswinney.com</p>
               </Grid>
             </Grid>
             <Grid container item xs={3} className="logos">
               <Grid container item justify="center" alignItems="center" className="small-logo">
                 <img onClick={() => window.open("https://lsusports.net/sports/football", "_blank")} src={LSULogo} alt="LSU Logo" />
+                <p style={{ marginBottom: "-12px" }}>lsu.football</p>
               </Grid>
             </Grid>
             <Grid container item xs={3} className="logos">
               <Grid container item justify="center" alignItems="center" className="small-logo">
                 <img onClick={() => window.open("https://ohiostatebuckeyes.com/sports/m-footbl/", "_blank")} src={OhioStaeLogo} alt="OhioState Logo" />
+                <p>coachgundy.com</p>
               </Grid>
             </Grid>
             <Grid container item xs={3} className="logos">
               <Grid container item justify="center" alignItems="center" className="big-logo">
                 <img onClick={() => window.open("https://scarletknights.com/sports/football", "_blank")} src={RutgersLogo} alt="Rutgers Logo" />
+                <p>daboswinney.com</p>
               </Grid>
             </Grid>
           </Grid>

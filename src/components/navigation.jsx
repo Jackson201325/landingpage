@@ -27,6 +27,7 @@ const Navigation = () => {
           <button
             type="button"
             className="navbar-toggle collapsed"
+            style={{ marginTop: '23px' }}
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
