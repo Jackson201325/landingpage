@@ -14,7 +14,7 @@ export class Header extends Component {
                 <Grid container>
                   <Hidden xsDown>
                     <Grid container item md={6}>
-                      <div className="col-md-10 col-md-offset-1 intro-text">
+                      <div className="col-md-12 intro-text">
                         <h1 className="title">
                           {HEADER.title}
                         </h1>

@@ -80,12 +80,10 @@ hr {
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
   margin-bottom: -20px;
 }
 #menu img {
   width: 20%;
-  margin: 0px 40px;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Roboto", sans-serif;
@@ -270,62 +268,69 @@ a:focus,
 /* Features Section */
 #features {
   padding: 0 0 100px 0;
-  background: #005587;
+  background: #f0f0f0;
+}
+
+#features {
+  padding: 0 48px;
 }
 
 #features .title {
-  margin-top: 12%;
+  margin-top: 8%;
   margin-bottom: 0px;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#features .content-wrapper {
+  color: black;
 }
 
 #features .content {
-  margin-bottom: 66px;
-  margin-top: 7%;
-  color: white;
+  width: 65%;
+}
+
+#features .content p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+#features .title-wrapper {
+  margin-bottom: 6%;
 }
 
 #features h2 {
-  color: white;
+  color: #005587;
+  font-weight: 400;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
-#features .info-card {
-  background-color: #025c91;
-  padding: 16px;
-  color: white;
-  border-radius: 20px;
-}
-
-#features i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #005587 0%, #005587 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}
 #features .leakage {
   text-align: left;
 }
-#features img {
-  width: 100%;
-  height: auto;
+
+#features .mobile-image-container .img-one {
+  height: 120%;
 }
 
-#features .section-title li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  color: white;
-  font-size: 11px;
-  font-weight: 300;
-  padding-right: 8px;
+#features .mobile-image-container .img-two {
+  height: 114%;
 }
 
 #features .section-title h2::after {
-  background: linear-gradient(to right, white 0%, white 100%);
+  bottom: -8px;
+  width: 100px;
+  height: 4px;
+  margin-left: 8px;
+}
+
+#features .line h2::after {
+  left: -10px;
+  width: 90px;
 }
 /* About Section */
 #about {
@@ -363,9 +368,9 @@ a:focus,
   content: "";
   background: linear-gradient(to right, #005587 0%, #005587 100%);
   height: 4px;
-  width: 60px;
+  width: 110px;
   bottom: 0;
-  left: 50%;
+  left: 55%;
 }
 
 #about .coach-name h4 {
@@ -794,6 +799,48 @@ label {
 
   #about .arrows {
     font-size: 50px;
+  }
+
+  #features {
+    padding: 0px;
+  }
+
+  #features .title {
+    text-align: center;
+    padding: 0px 8px;
+    font-size: 30px;
+  }
+
+  #features .section-title h2::after {
+    margin-left: 60px;
+  }
+
+  #features .line h2::after {
+    margin-left: 32px;
+  }
+
+  #features .content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #features .title {
+    margin-bottom: 32px;
+  }
+
+  #features .content-wrapper {
+    padding: 0px 16px;
+    margin-bottom: 16px;
+  }
+
+  #features .mobile-image-container .img-one {
+    height: 315px;
+    padding: 16px 0px;
+  }
+
+  #features .mobile-image-container .img-two {
+    height: 315px;
+    padding: 16px 0px;
   }
 
   #menu .logo {

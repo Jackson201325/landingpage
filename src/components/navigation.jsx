@@ -40,6 +40,7 @@ const Navigation = () => {
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
+          style={{ paddingLeft: '0px' }}
         >
           <img src={OV_Blue} className="collapsed logo" alt="Logo" />
           <ul className="nav navbar-nav navbar-right">

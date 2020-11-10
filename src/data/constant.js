@@ -33,9 +33,9 @@ export const ABOUT = {
 // Features
 export const FEATURE_ONE = {
   title1: 'Your recruiting funnel is ',
-  content1: 'Parts of the recruiting funnel are well understood',
-  content2: ['Identify player', 'Follow on Twitter', 'Nurture with texts & tweets', 'Close with home & campus visits'],
-  content3: 'But how do you warm them up before you make contact?',
+  content1: 'You already know how to grab their attention, but what are you doing with it?',
+  content2: '"Imagine a world where the top prospects are beating down your door, not the other way around."',
+  content3: '- CFB Brand Consultant & former Adidas Director of Brand Marketing Jeremy Darlow',
   content4: 'How do you keep them and their parents engaged between the texts and campus visits?',
 }
 export const FEATURE_TWO = {
