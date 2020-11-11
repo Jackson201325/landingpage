@@ -24,7 +24,7 @@ const About = () => {
                 </Grid>
                 <Grid item container xs={7}>
                   <div className="mobile-image-container">
-                    <img src={require('../static/images/howitworks_two.png')} alt="two"></img>
+                    <img src={require('../static/images/howitworks_two.png')} alt="two" />
                   </div>
                 </Grid>
               </Grid>

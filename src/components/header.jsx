@@ -15,7 +15,9 @@ export class Header extends Component {
                   <Grid container item md={6}>
                     <div className="col-md-12 intro-text">
                       <h1 className="title">
-                        {HEADER.title}
+                        {HEADER.title.slice(0, 23)}
+                        <br />
+                        {HEADER.title.slice(24)}
                       </h1>
                       <p className="content">
                         {this.props.data ? HEADER.content : "Loading"}
@@ -29,8 +31,9 @@ export class Header extends Component {
                 <Hidden smUp>
                   <div className="col-md-10 col-md-offset-1 intro-text mobile">
                     <h1 className="mobile-title">
-                      {HEADER.title}
-
+                      {HEADER.title.slice(0, 23)}
+                      <br />
+                      {HEADER.title.slice(24)}
                     </h1>
                     <p className="mobile-content">
                       {this.props.data ? this.props.data.paragraph : "Loading"}

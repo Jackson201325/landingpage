@@ -26,7 +26,7 @@ const Porgrams = () => {
             <Grid container item xs={3} className="logos">
               <Grid container item justify="center" alignItems="center" className="small-logo">
                 <img onClick={() => window.open("https://lsusports.net/sports/football", "_blank")} src={LSULogo} alt="LSU Logo" />
-                <p style={{ marginBottom: "-12px" }}>lsu.football</p>
+                <p>lsu.football</p>
               </Grid>
             </Grid>
             <Grid container item xs={3} className="logos">
